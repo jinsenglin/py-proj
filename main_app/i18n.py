@@ -1,3 +1,15 @@
+import gettext
+
+locale_path = '/home/pi/py-proj/main_app/locale/'
+#    zh_trans = gettext.translation('main-app', locale_path, languages=['zh_TW'])
+#    en_trans = gettext.translation('main-app', locale_path, languages=['en_US'])
+#    en_trans.install()
+gettext.bindtextdomain('main-app', locale_path)
+gettext.textdomain('main-app')
+_ = gettext.gettext 
+
+ 
+"""
 import oslo_i18n
 
 
@@ -15,3 +27,4 @@ _LC = _translators.log_critical
 
 def get_available_languages():
     return oslo_i18n.get_available_languages(DOMAIN)
+"""
