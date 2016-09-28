@@ -1,2 +1,3 @@
 pbr
 oslo.config
+oslo.i18n
